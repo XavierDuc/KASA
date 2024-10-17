@@ -1,0 +1,32 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    color: black;
+}
+nav{
+    display: flex; 
+    list-style: none;
+    align-items: center;
+}
+li{
+    padding: 40px;
+    display: flex;
+    font-family: 'montserrat';
+    font-size: 24px;
+
+}
+.logoheader{
+    padding: 40px;
+    margin-left: 80px;
+    width: 180px;
+    height: 60px;
+}
+.liAcceuil{
+    text-decoration: underline;
+    font-family: 'montserrat';
+    font-size: 24px;
+}
+a{
+    color: black;
+    text-decoration: none ;
+}
