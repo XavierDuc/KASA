@@ -9,9 +9,9 @@ const Gallery = () => {
       {logements.map((logement) => {
         return (
           <article key={logement.id}>
-            <Link to={`/logement/${logement.id}`}>
+            {/* <Link to={`/logement/${logement.id}`}> */}
               <Card image={logement.cover} title={logement.title} />
-            </Link>
+            {/* </Link> */}
           </article>
         );
       })}

@@ -14,7 +14,7 @@ const App = () => {
       
      <Header/>
      <Banner/>
-     <Card/>
+     {/* <Card/> */}
      <Gallery/>
      <Footer/>
      
