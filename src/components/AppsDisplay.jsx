@@ -1,6 +1,5 @@
 import AppsData from "../appartement.json";
 import { useParams, Navigate } from "react-router-dom";
-import Tag from "../components/Tag";
 import Collapse from "../components/Collapse";
 import Carrousel from "../components/Carrousel";
 import Rate from "../components/Rate";
@@ -11,6 +10,14 @@ const AppsDisplay = () => {
   const { id } = useParams();
   
   const ficheApps = AppsData.find((logement) => logement.id === id);
+
+  const equipements = ficheApps?.equipments.map((equipment, i) => {
+    return (
+      <ul key={i}>
+        <li>{equipment}</li>
+      </ul>
+    );
+  });
 
   if (!ficheApps) {
     return <Navigate to="/404" />;
@@ -54,18 +61,10 @@ const AppsDisplay = () => {
           {/* Description and Equipment sections */}
           <div className="collapse-container">
             <div className="collapse-fiche">
-              <Collapse title="Description">
-                <p>{ficheApps.description}</p>
-              </Collapse>
+              <Collapse title="Description" content={ficheApps.description}/>
             </div>
             <div className="collapse-fiche">
-              <Collapse title="Équipements">
-                <ul>
-                  {ficheApps.equipments.map((equipment, index) => (
-                    <li key={index}>{equipment}</li>
-                  ))}
-                </ul>
-              </Collapse>
+              <Collapse title="Équipements" content={equipements}/>
             </div>
           </div>
         </section>
