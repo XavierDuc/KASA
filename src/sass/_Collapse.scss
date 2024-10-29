@@ -19,6 +19,8 @@
 .collapse-title {
     color: white;
     font-size: 18px;
+    font-family: 'montserrat';
+    font-weight: 700;
 }
 
 .collapse-arrow {
@@ -45,8 +47,13 @@
 .collapse-content p {
     color: #FF6060;
     margin: 0;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
+    font-family: 'montserrat';
+}
+.collapse-container .collapse-fiche ul li {
+    font-size: 18px;
+    font-family: 'montserrat';
 }
 
 @media (max-width: 768px) {

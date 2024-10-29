@@ -1,66 +1,54 @@
-.carousel {
+.Carroussel {
   position: relative;
-  width: 100%;
-  height: 400px;
+  width: 87%;
+  height: 600px;
   overflow: hidden;
-  border-radius: 0.75rem;
-}
+  margin: 30px 7%;
 
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10;
-  padding: 0.5rem;
-  background-color: rgba(0, 0, 0, 0.3);
-  color: white;
-  border: none;
-  border-radius: 9999px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
+  .carroussel-img-div {
+    position: relative;
+    width: 100%;
+    height: 100%;
 
-.carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-}
+    .carroussel-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 
-.carousel-button.prev {
-  left: 1rem;
-}
+    .leftButton,
+    .rightButton {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 10;
+      padding: 0.5rem;
+      background: none;
+      border: none;
+      border-radius: 9999px;
+      cursor: pointer;
+      transition: background-color 0.3s;
 
-.carousel-button.next {
-  right: 1rem;
-}
+    }
 
-.slide {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  transition: opacity 0.5s ease-in-out;
-}
+    .leftButton {
+      left: 1rem;
 
-.slide.inactive {
-  opacity: 0;
-}
+      .leftArrowimg {
+        width: 50px;
+        height: 80px;
+        object-fit: cover;
+      }
+    }
 
-.slide.active {
-  opacity: 1;
-}
+    .rightButton {
+      right: 1rem;
 
-.slide img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.slide-number {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  transform: translateX(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 0.5rem 1rem;
-  border-radius: 9999px;
-  font-size: 0.875rem;
+      .rightArrowImg {
+        width: 50px;
+        height: 120px;
+        object-fit: cover;
+      }
+    }
+  }
 }

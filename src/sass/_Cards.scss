@@ -26,15 +26,6 @@
       font-size: 18px;
       box-sizing: inherit;
     }
-  
-    // &_overlay {
-    //     position: absolute;
-    //     top: 0;
-    //     height: 100%;
-    //     width: 100%;
-    //     border-radius: inherit;
-        
-    // }
     &:hover {
       > .card_img {
         transform: scale(1.01);
