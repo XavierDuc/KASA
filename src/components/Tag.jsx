@@ -1,5 +1,3 @@
-import React from "react";
-
 function Tag({ nom }) {
   return (
     <div className="tag-container">

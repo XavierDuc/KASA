@@ -1,4 +1,3 @@
-import React from 'react';
 import emptyStar from "../assets/images/star-inactive 1.png";
 import fullStar from "../assets/images/Vector.png";
 
