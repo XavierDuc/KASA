@@ -1,8 +1,3 @@
-import { useState } from 'react'
-import Header from './header';
-import Footer from './Footer';
-import Gallery from './gallery';
-import Banner from './HomeBanner';
 import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import LogementPage from '../pages/LogementPage';
 import HomePage from '../pages/HomePage';
