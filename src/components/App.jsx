@@ -1,25 +1,27 @@
 import { useState } from 'react'
-import '../sass/_App.scss'
-import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import Header from './header';
 import Footer from './Footer';
 import Gallery from './gallery';
-import Card from './Cards';
-import Banner from './Banner';
+import Banner from './HomeBanner';
+import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
+import LogementPage from '../pages/LogementPage';
+import HomePage from '../pages/HomePage';
+import AboutPage from '../pages/AboutPage';
 
 
 const App = () => {
+  
   return (
-    <div className='app'>
-      
-     <Header/>
-     <Banner/>
-     {/* <Card/> */}
-     <Gallery/>
-     <Footer/>
-     
-
-    </div>
+    <HashRouter>
+    <Routes>
+      <Route path="/" element={<Navigate replace to="/accueil" />} />
+      <Route path="/accueil" element={<HomePage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/logement/:id" element={<LogementPage />} />
+      {/* <Route path="*" element={<NoPage />} /> */}
+    </Routes>
+  </HashRouter>
   )
 }
+
 export default App

@@ -1,0 +1,61 @@
+.collapse-item {
+    width: 100%;
+    max-width: 1023px;
+    margin: 0 auto 20px;
+}
+
+.collapse-button {
+    width: 100%;
+    padding: 10px 20px;
+    background: #FF6060;
+    border-radius: 5px;
+    border: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.collapse-title {
+    color: white;
+    font-size: 18px;
+}
+
+.collapse-arrow {
+    transition: transform 0.3s ease;
+}
+
+.collapse-arrow--open {
+    transform: rotate(180deg);
+}
+
+.collapse-content {
+    background: #F7F7F7;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+}
+
+.collapse-content--open {
+    max-height: 500px;
+    padding: 20px;
+}
+
+.collapse-content p {
+    color: #FF6060;
+    margin: 0;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .collapse-item {
+        max-width: 100%;
+        padding: 0 20px;
+    }
+
+    .collapse-title {
+        font-size: 16px;
+    }
+}

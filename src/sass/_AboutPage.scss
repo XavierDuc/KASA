@@ -1,0 +1,23 @@
+/* AboutPage.css */
+.aboutPage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.aboutPage__wrapper {
+    flex: 1 0 auto;
+}
+
+.about-main {
+    padding: 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1240px;
+}
+
+@media screen and (max-width: 768px) {
+    .about-main {
+        padding: 10px;
+    }
+}
