@@ -1,7 +1,7 @@
 import emptyStar from "../assets/images/star-inactive 1.png";
 import fullStar from "../assets/images/Vector.png";
 
-function Rate({ score }) {
+const Rate =({ score }) => {
     const notes = [1, 2, 3, 4, 5];
     
     return (

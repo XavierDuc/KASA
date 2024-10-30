@@ -1,0 +1,33 @@
+.error-main{
+    display: flex;
+    flex-direction: column;
+    .error-link-to-home{
+    
+        margin: 80px 42%;
+        font-family: 'montserrat';
+        text-decoration: underline;
+        width: 50%;
+        color: black;
+        font-size: 18px;
+        line-height: 26px;
+        font-weight: 500;
+    }
+}
+.text-404{
+    margin:  80px 27%;
+    padding: 100px;
+    color: #ff6060;
+    line-height: 100px;
+    font-family: 'montserrat';
+    font-size: 290px;
+    font-weight: 700;
+
+}
+.error-text{
+    font-family: 'montserrat';
+    font-size: 36px;
+    line-height: 51px;
+    margin: 80px 27%;
+    width: 50%;
+    color: #ff6060;
+}

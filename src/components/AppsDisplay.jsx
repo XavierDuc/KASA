@@ -6,6 +6,7 @@ import Rate from "../components/Rate";
 
 
 
+
 const AppsDisplay = () => {
   const { id } = useParams();
   

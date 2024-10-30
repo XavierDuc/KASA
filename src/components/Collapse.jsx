@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 const Collapse = ({ title, content }) => {
     const [isOpen, setIsOpen] = useState(false);
 

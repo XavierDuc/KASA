@@ -2,6 +2,7 @@ import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import LogementPage from '../pages/LogementPage';
 import HomePage from '../pages/HomePage';
 import AboutPage from '../pages/AboutPage';
+import ErrorPage from "../pages/ErrorPage";
 
 
 const App = () => {
@@ -13,7 +14,7 @@ const App = () => {
       <Route path="/accueil" element={<HomePage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/logement/:id" element={<LogementPage />} />
-      {/* <Route path="*" element={<NoPage />} /> */}
+      <Route path="*" element={<ErrorPage />} />
     </Routes>
   </HashRouter>
   )
