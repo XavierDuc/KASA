@@ -1,34 +1,63 @@
 .card {
-    width: 340px;
-    height: 340px;
-    position: relative;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    animation: fadeInUp 600ms ease-in-out;
-    overflow: hidden;
-    margin-left: 50px;
+  width: 85%;
+  height: 340px;
+  position: relative;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  animation: fadeInUp 600ms ease-in-out;
+  overflow: hidden;
+  margin-left: 50px;
+
+ 
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    height: 280px;
+    margin-left: 0;
+  }
+
+  @media screen and (max-width: 480px) {
   
-    &_img {
+    height: 240px;
+    margin-bottom: 15px;
+  }
+
+  &_img {
     width: inherit;
     height: inherit;
     object-fit: cover;
     border-radius: inherit;
     transform: scale(1);
     transition: transform 300ms;
+
+    @media screen and (max-width: 768px) {
+      border-radius: 8px;
     }
-  
-    &_title {
-      position: absolute;
-      bottom: 0;
-      margin: 15px 20px;
-      color: rgba(255, 255, 255, 1);
-      font-family: 'montserrat';
-      font-size: 18px;
-      box-sizing: inherit;
+  }
+
+  &_title {
+    position: absolute;
+    bottom: 0;
+    margin: 15px 20px;
+    color: rgba(255, 255, 255, 1);
+    font-family: 'montserrat';
+    font-size: 18px;
+    box-sizing: inherit;
+
+    @media screen and (max-width: 768px) {
+      font-size: 16px;
+      margin: 10px 15px;
     }
-    &:hover {
-      > .card_img {
-        transform: scale(1.01);
-      }
+
+    @media screen and (max-width: 480px) {
+      font-size: 14px;
+      margin: 8px 12px;
     }
-}  
+  }
+
+  &:hover {
+    > .card_img {
+      transform: scale(1.01);
+    }
+  }
+}

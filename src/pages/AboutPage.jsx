@@ -1,5 +1,5 @@
 import Footer from "../components/Footer";
-import Header from "../components/header";
+import Header from "../components/Header";
 import AboutBanner from "../components/AboutBanner"
 import AboutDisplay from "../components/AboutDisplay";
 

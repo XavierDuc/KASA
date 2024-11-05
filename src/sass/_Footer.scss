@@ -1,4 +1,4 @@
-.footer{
+.footer {
     background-color: black;
     display: flex;
     flex-wrap: wrap;
@@ -7,19 +7,37 @@
     align-items: center;
     margin: 0;
     padding: 20px 0;
-    position:sticky;
+    position: sticky;
     width: 100%;
-    
-}
-
-.footer p{
+  
+    @media screen and (max-width: 768px) {
+      padding: 15px 0;
+    }
+  
+  }
+  
+  .footer p {
     color: white;
     font-family: 'montserrat';
-}
-
-.logofooter{
+  
+    @media screen and (max-width: 768px) {
+      font-size: 14px; 
+    }
+  
+  }
+  
+  .logofooter {
     background-color: black;
     width: 100px;
     height: 25px;
     padding: 30px;
-}
+  
+    @media screen and (max-width: 768px) {
+      width: 80px;  
+      height: 20px;
+      padding: 20px; 
+    }
+  
+
+  }
+  

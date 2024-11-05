@@ -16,6 +16,21 @@
       object-fit: cover;
     }
 
+    .slide-counter {
+      font-family: 'montserrat';
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 18px;
+      line-height: 26px;
+      font-weight: 500;
+    }
+  
+
     .leftButton,
     .rightButton {
       position: absolute;

@@ -27,6 +27,9 @@ const Carrousel = ({ slides }) => {
           alt={`Slide ${current + 1}`
         }
         />
+         <div className="slide-counter">
+          {current + 1} / {length}
+        </div>
         {length > 1 && (
           <>
             <button

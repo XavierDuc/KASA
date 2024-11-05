@@ -1,10 +1,41 @@
-.AboutDisplay{
-    .collapse{
-        margin: 100px;
-        .collapse-item{
-            width: 1400px;
-            max-width: none;
+.AboutDisplay {
+    .collapse-item {
+        max-width: 1400px;
+      width: 86%;
+      margin-left: 140px;
+
+      @media screen and (max-width: 1268px) {
+        max-width: 1200px;
+        margin-left: 100px;
+    
+      }
+  
+  
+      @media screen and (max-width: 1080px) {
+        max-width: 1200px;
+      width: 86%;
+      margin-left: 100px;
+      }
+  
+      @media screen and (max-width: 768px) {
+        width: 90%;
+        margin: 20px 20px;
+      }
+  
+      .collapse-title {
+        font-size: 18px; 
+        padding: 10px 0; 
+  
+        @media screen and (max-width: 768px) {
+          font-size: 16px;
+          padding: 0; 
         }
+  
+        @media screen and (max-width: 480px) {
+          font-size: 14px;
+          padding: 5px 0; 
+        }
+      }
     }
-   
-}
+  }
+  

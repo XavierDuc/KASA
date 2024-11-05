@@ -1,6 +1,6 @@
 import AppsDisplay from "../components/AppsDisplay";
 import Footer from "../components/Footer";
-import Header from "../components/header";
+import Header from "../components/Header";
 
 
 const LogementPage = () => {

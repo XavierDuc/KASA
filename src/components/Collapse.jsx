@@ -17,7 +17,7 @@ const Collapse = ({ title, content }) => {
                 </span>
             </button>
             <div className={`collapse-content ${isOpen ? 'collapse-content--open' : ''}`}>
-                <p>{content}</p>
+                {typeof content === 'string' ? <p>{content}</p> : content}
             </div>
         </div>
     );

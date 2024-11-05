@@ -1,6 +1,6 @@
 import ErrorDisplay from "../components/ErrorDisplay";
 import Footer from "../components/Footer";
-import Header from "../components/header";
+import Header from "../components/Header";
 
 
 

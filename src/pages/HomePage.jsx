@@ -1,7 +1,7 @@
 import HomeBanner from "../components/HomeBanner";
 import Footer from "../components/Footer";
 import Gallery from "../components/gallery";
-import Header from "../components/header";
+import Header from "../components/Header";
 
 
 const HomePage = () => {
