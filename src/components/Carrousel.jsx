@@ -22,16 +22,16 @@ const Carrousel = ({ slides }) => {
     <div className="Carroussel">
       <div className="carroussel-img-div">
         <img
-        className='carroussel-img'
+          className='carroussel-img'
           src={slides[current]}
-          alt={`Slide ${current + 1}`
-        }
+          alt={`Slide ${current + 1}`}
         />
-         <div className="slide-counter">
-          {current + 1} / {length}
-        </div>
+        
         {length > 1 && (
           <>
+            <div className="slide-counter">
+              {current + 1} / {length}
+            </div>
             <button
               onClick={prevImage}
               className="leftButton"

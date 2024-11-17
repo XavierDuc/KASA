@@ -1,5 +1,5 @@
-import emptyStar from "../assets/images/star-inactive 1.png";
-import fullStar from "../assets/images/Vector.png";
+import emptyStar from "../assets/images/empty-star.png";
+import fullStar from "../assets/images/fill-star.png";
 
 const Rate =({ score }) => {
     const notes = [1, 2, 3, 4, 5];
